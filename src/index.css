@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --color-app-bg: #0B0E14;
+  --color-app-card: #151A22;
+  --color-app-surface: #1E2532;
+  --color-app-accent: #0A84FF;
+  --color-app-danger: #FF453A;
+  --color-app-success: #32D74B;
+  
+  --color-text-main: #F8FAFC;
+  --color-text-muted: #94A3B8;
+}
+
+body {
+  background-color: var(--color-app-bg);
+  color: var(--color-text-main);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Remove scrollbar for clean look */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+input {
+  background: transparent;
+}
+
+/* Basic structural utilities */
+.ios-card {
+  background-color: var(--color-app-card);
+  border-radius: 12px;
+}
+
+.ios-list-item {
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.15);
+}
+
+.ios-list-item:last-child {
+  border-bottom: none;
+}
