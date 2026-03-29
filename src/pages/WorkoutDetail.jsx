@@ -46,6 +46,7 @@ export default function WorkoutDetail() {
       setCurrentSet(prev => prev + 1)
       setShowTimer(true)
     } else {
+      setCurrentSet(prev => prev + 1)
       setCompletedExercises(prev => [
         ...prev,
         { name: currentExercise.name, completedSets: currentExercise.sets }
